@@ -1,2 +1,14 @@
-language = "python3"
-run = "print("Hello")"
+'''
+print('Введите a:')
+a = int(input())
+print(a *72362478)
+print(len(a))
+
+
+b = 50
+c = 10
+print(f'Вставим числа {b} и {с}')
+'''
+
+
+
