@@ -18,22 +18,18 @@ a = int(input())
 if a == 0:
     print('Зачем ты хочешь решить задачу <<Тело брошенное под углом>> без угла?')
     exit()
-print('Сколько тело будет лететь, в секундах:')
-n = int(input())
-if n == 0:
-  print('Ты в пустую тратишь мое время')
-  exit()
-print('Решаем вашу задачу. Придется немного подождать. Можете попить чайку;)')
+print('Ответ:')
 
-answers = []
-for t in range(0, n + 1):
-    x = round(abs(x0 + v0 * cos(a) * t))
-    y = round(abs(y0 + v0 * sin(a) * t - ((g * t ** 2) / 2)))
-    answers.append(t)
-    answers.append(x)
-    answers.append(y)
+steps = 10 
+answers = numpy.zeros((steps, 3))
+c = 0
 
-b = numpy.array(answers)
-print(b)
-
+for t in numpy.linspace(0, 5, steps):
+    x = abs(x0 + v0 * cos(a) * t)
+    y = abs(y0 + v0 * sin(a) * t - ((g * t ** 2) / 2))
+    answers[c, 0] = t
+    answers[c, 1] = x
+    answers[c, 2] = y
+    c += 1
+print(answers)
 

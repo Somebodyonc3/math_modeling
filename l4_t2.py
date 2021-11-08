@@ -1,7 +1,7 @@
 import math
 from l4_const import k, e, hp, g
 
-b = 30
+b = math.radians(30)
 a = math.pi / 3
 h = 100
 
