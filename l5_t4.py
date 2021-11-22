@@ -10,3 +10,4 @@ for t in numpy.linspace(a, b, N):
     answers[c, 1] = x
     answers[c, 2] = y
     c += 1
+print(answers)
