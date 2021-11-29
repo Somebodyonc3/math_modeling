@@ -10,7 +10,7 @@ b = int(input())
 c = int(input())
 
 def parabola_and_giperbola(a, b, c, Xa, Xb, N,  title = 'Паробола и гипербола'):
-  x = numpy.arange(Xa, Xb, N)
+  x = numpy.linspace(Xa, Xb, N)
   
   y = a * x ** 2 + b * x + c
   y1 = 1 / x
