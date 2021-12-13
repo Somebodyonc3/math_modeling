@@ -41,5 +41,5 @@ for i in range(N):
   x.append(r[i] * np.cos(phi[i]))
   y.append(r[i] * np.sin(phi[i]))
 
-plt.plot(x,y)
+plt.plot(x, y)
 plt.show()
