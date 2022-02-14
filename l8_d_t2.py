@@ -8,8 +8,8 @@ t = numpy.arange(0, 24, 0.1)
 
 def victoria(S, t):
 	
-	a = numpy.pi /12 * (t - 12)
-	cosin = numpy.cos(a)
+	alpha = numpy.pi /12 * (t - 12)
+	cosin = numpy.cos(alpha)
 	if cosin < 0:
 		cosin = 0
 	R = numpy.sqrt(S / numpy.pi)
