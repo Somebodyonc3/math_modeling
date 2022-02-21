@@ -7,11 +7,11 @@ from scipy.integrate import odeint
 import matplotlib.pyplot as plt
 
 m1 = 10 ** 19
-h0 = 44000
+h0 = 440000
 R = 6371
 M =  5.972 * 10 ** 24
 g = 9.88
-h = numpy.arange(h0, R, 0.1)
+h = numpy.arange(h0, R, 0.01)
 
 G = (m1 * g * (h0 - R) ** 2) / m1 * M
 
